@@ -1,14 +1,23 @@
 <template>
+  <LNB />
+  <RNB />
   <TheHeader />
-  <RouterView />
 </template>
 
 <script>
+import LNB from '~/components/LNB'
+import RNB from '~/components/RNB'
 import TheHeader from '~/components/TheHeader'
 
 export default {
   components: {
+    LNB, // 지역등록
+    RNB,
     TheHeader
   }
 }
 </script>
+
+<style lang="scss">
+@import "~/scss/main.scss";
+</style>
